@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/iv_headIcon"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_head"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/full_name_login_TextView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="name"
+        android:textSize="26dp"
+        android:gravity="center"
+        android:background="@drawable/edit_layout"
+        android:hint="username"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_headIcon"
+        app:layout_constraintStart_toStartOf="@+id/iv_headIcon"
+        app:layout_constraintTop_toBottomOf="@+id/iv_headIcon" />
+
+    <TextView
+        android:id="@+id/text_username_login_TextView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_layout"
+        android:hint="username"
+        android:textSize="26dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_headIcon"
+        app:layout_constraintStart_toStartOf="@+id/iv_headIcon"
+        app:layout_constraintTop_toBottomOf="@+id/full_name_login_TextView" />
+
+    <TextView
+        android:id="@+id/text_password_login_TextView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_layout"
+        android:hint="password"
+        android:paddingLeft="10dp"
+        android:textSize="26dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/iv_headIcon"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/iv_headIcon"
+        app:layout_constraintTop_toBottomOf="@+id/text_username_login_TextView" />
+
+
+    <TextView
+        android:id="@+id/text_phone_login_TextView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="26dp"
+        android:gravity="center"
+        android:background="@drawable/edit_layout"
+        android:hint="phone number"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_headIcon"
+        app:layout_constraintStart_toStartOf="@+id/iv_headIcon"
+        app:layout_constraintTop_toBottomOf="@+id/text_password_login_TextView" />
+
+    <Button
+        android:id="@+id/btn_back_Button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_layout"
+        android:text="BACK"
+        app:layout_constraintEnd_toEndOf="@+id/text_phone_login_TextView"
+        app:layout_constraintStart_toStartOf="@+id/text_phone_login_TextView"
+        app:layout_constraintTop_toBottomOf="@+id/text_phone_login_TextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

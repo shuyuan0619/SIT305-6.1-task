@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/account"
+        android:title="account"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/myOrder"
+        android:title="my order"
+        app:showAsAction="never" />
+</menu>

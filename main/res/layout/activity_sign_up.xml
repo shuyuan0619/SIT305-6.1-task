@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/iv_headIcon"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_head"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add image"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_headIcon"
+        app:layout_constraintStart_toStartOf="@+id/iv_headIcon"
+        app:layout_constraintTop_toBottomOf="@+id/iv_headIcon" />
+
+    <EditText
+        android:id="@+id/edit_full_name_login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_layout"
+        android:hint="username"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_headIcon"
+        app:layout_constraintStart_toStartOf="@+id/iv_headIcon"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/username_login_EditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_layout"
+        android:hint="username"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_headIcon"
+        app:layout_constraintStart_toStartOf="@+id/iv_headIcon"
+        app:layout_constraintTop_toBottomOf="@+id/edit_full_name_login" />
+
+    <EditText
+        android:id="@+id/pass_EditText_login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_layout"
+        android:hint="password"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_headIcon"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/iv_headIcon"
+        app:layout_constraintTop_toBottomOf="@+id/username_login_EditText" />
+
+    <EditText
+        android:id="@+id/confirm_password_login_EditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_layout"
+        android:hint="confirm password"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_headIcon"
+        app:layout_constraintStart_toStartOf="@+id/iv_headIcon"
+        app:layout_constraintTop_toBottomOf="@+id/pass_EditText_login" />
+
+    <EditText
+        android:id="@+id/edit_phone_login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_layout"
+        android:hint="phone number"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_headIcon"
+        app:layout_constraintStart_toStartOf="@+id/iv_headIcon"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password_login_EditText" />
+
+    <Button
+        android:id="@+id/btn_create_account_login"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:text="CREATE ACCOUNT"
+        android:background="@drawable/btn_layout"
+        app:layout_constraintEnd_toEndOf="@+id/edit_phone_login"
+        app:layout_constraintStart_toStartOf="@+id/edit_phone_login"
+        app:layout_constraintTop_toBottomOf="@+id/edit_phone_login" />
+</androidx.constraintlayout.widget.ConstraintLayout>
